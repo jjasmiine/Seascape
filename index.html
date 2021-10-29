@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Sea|Scape</title>
+</head>
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">SeaScape</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="/video/Jellyfish.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Escape Your Everyday</h2>
+            <h3>And Seascape</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem natus, repellendus accusamus quia hic ut aperiam amet voluptatibus asperiores error?</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="/images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="/images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="/images/facebook.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+    </script>
+
+    
+</body>
+</html>
+
+<!--
+    <i class="fas fa-times"></i>
+    <i class="fas fa-bars"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+ -->
